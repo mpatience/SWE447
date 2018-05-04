@@ -114,14 +114,14 @@
 
 				texture1.anisotropy = maxAnisotropy;
 				texture1.wrapS = texture1.wrapT = THREE.RepeatWrapping;
-				texture1.repeat.set( 8, 8 );
+				texture1.repeat.set( 16, 16 );
 
 				var texture2 = textureLoader.load( "galaxy.jpg" );
 				var material2 = new THREE.MeshPhongMaterial( { color: 0xffffff, map: texture2 } );
 
 				texture2.anisotropy = 1;
 				texture2.wrapS = texture2.wrapT = THREE.RepeatWrapping;
-				texture2.repeat.set( 8, 8 );
+				texture2.repeat.set( 16, 16 );
 
 				if ( maxAnisotropy > 0 ) {
 
