@@ -114,7 +114,7 @@
 
 				texture1.anisotropy = maxAnisotropy;
 				texture1.wrapS = texture1.wrapT = THREE.RepeatWrapping;
-				texture1.repeat.set( 1, 1 );
+				texture1.repeat.set( 512, 512 );
 
 				var texture2 = textureLoader.load( "galaxy.jpg" );
 				var material2 = new THREE.MeshPhongMaterial( { color: 0xffffff, map: texture2 } );
