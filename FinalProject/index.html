@@ -120,8 +120,8 @@
 				var material2 = new THREE.MeshPhongMaterial( { color: 0xffffff, map: texture2 } );
 
 				texture2.anisotropy = 1;
-				texture2.wrapS = texture2.wrapT = THREE.RepeatWrapping;
-				texture2.repeat.set( 512, 512 );
+				texture2.wrapS = texture2.wrapT = THREE.ClampToEdgeWrapping;
+				// texture2.repeat.set( 512, 512 );
 
 				if ( maxAnisotropy > 0 ) {
 
