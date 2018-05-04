@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - materials - anisotropic texture filtering</title>
+		<title>galaxy</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<style>
@@ -48,9 +48,9 @@
 		anisotropy: <span class="c" id="val_right"></span><br/>
 		</div>
 
-		<script src="../build/three.js"></script>
+		<script src="three.js"></script>
 
-		<script src="js/Detector.js"></script>
+		<script src="Detector.js"></script>
 
 		<script>
 
@@ -158,11 +158,6 @@
 
 				renderer.domElement.style.position = "relative";
 				container.appendChild( renderer.domElement );
-
-				// STATS1
-
-				stats = new Stats();
-				container.appendChild( stats.dom );
 
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
